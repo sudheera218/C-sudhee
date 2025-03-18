@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float a, b, c; // side a, side b, side c of a Triangle
+
+    // Input the lengths of the three sides of the triangle
+    printf("Enter the lengths of the three sides of the triangle:\n");
+    printf("Side 1 (a): ");
+    scanf("%f", &a);
+    printf("Side 2 (b): ");
+    scanf("%f", &b);
+    printf("Side 3 (c): ");
+    scanf("%f", &c);
+
+    // Check if the sides form a valid triangle
+    if (a + b > c && b + c > a && c + a > b) {
+        printf("The triangle is valid.\n");
+    } else {
+        printf("The triangle is not valid.\n");
+    }
+
+    return 0;
+}
